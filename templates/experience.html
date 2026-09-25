@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+
+{% block title %}Experience | Nora Sharp{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+
+    <p class="eyebrow">Experience</p>
+
+    <h1>
+        Where I've learned by doing.
+    </h1>
+
+    <p>
+        Research, field work, and engineering experiences that have
+        shaped how I think about civil engineering.
+    </p>
+
+</section>
+
+
+<section class="experience-list">
+
+    {% for experience in experiences %}
+
+    <article class="experience-card">
+
+        <!-- Experience Header -->
+
+        <div class="experience-header">
+
+            <div>
+
+                <p class="experience-date">
+                    {{ experience.date }}
+                </p>
+
+                <h2>
+                    {{ experience.role }}
+                </h2>
+
+                <h3>
+                    {{ experience.company }}
+                </h3>
+
+            </div>
+
+        </div>
+
+
+        <!-- Description -->
+
+        <div class="experience-description">
+
+            <p>
+                {{ experience.description }}
+            </p>
+
+        </div>
+
+
+        <!-- Tags -->
+
+        {% if experience.tags %}
+
+        <div class="tags">
+
+            {% for tag in experience.tags %}
+
+                <span>{{ tag }}</span>
+
+            {% endfor %}
+
+        </div>
+
+        {% endif %}
+
+
+        <!-- Website Link -->
+
+        {% if experience.link %}
+
+        <div class="experience-link">
+
+            <a
+                href="{{ experience.link }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-link"
+            >
+                {{ experience.link_text or "Visit website" }} →
+            </a>
+
+        </div>
+
+        {% endif %}
+
+
+        <!-- Photos -->
+
+        {% if experience.images %}
+
+        <div class="experience-images">
+
+            {% for image in experience.images %}
+
+                {% if image.file %}
+
+                <figure class="experience-figure">
+
+                    <img
+                        src="{{ url_for('static', filename='images/' + image.file) }}"
+                        alt="{{ image.caption }}"
+                    >
+
+                    {% if image.caption %}
+
+                    <figcaption>
+                        {{ image.caption }}
+                    </figcaption>
+
+                    {% endif %}
+
+                </figure>
+
+                {% endif %}
+
+            {% endfor %}
+
+        </div>
+
+        {% endif %}
+
+    </article>
+
+    {% endfor %}
+
+</section>
+
+{% endblock %}

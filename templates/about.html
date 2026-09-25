@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+About | Nora Sharp
+{% endblock %}
+
+
+{% block content %}
+
+<section class="page-header">
+
+    <p class="eyebrow">ABOUT ME</p>
+
+    <h1>
+        Civil engineering student,
+        researcher, and eager to learn.
+    </h1>
+
+</section>
+
+
+<section class="content-section">
+
+    <h2>My Background</h2>
+
+    <p>
+        I am originally from New Mexico (the land of enchantment), but am currently studying civil engineering at Columbia University. My current interests include water treatment, community based infrastructure, sustainability, and gaining hands-on engineering experience. 
+    </p>
+
+    <p>
+        My experience has taken me from laboratory research on
+        membranes and water treatment to field conservation work
+        in my home state of New Mexico. <br>
+        <br>
+        Outside of science and engineering I love: <br>
+        ★ Learning stained glass <br>
+        ★ Exploring New York <br>
+        ★ Hiking <br>
+        ★ Watching the Great British Bake Off <br>
+        ★  Learning to cook and bake <br>
+        ★ Cats <br>
+        ★ and Painting
+    </p>
+
+</section>
+<section class="about-gallery">
+
+    <div class="gallery-heading">
+        <p class="eyebrow">A GALLERY OF MY INTERESTS</p>
+        <h2>When I'm not engineering</h2>
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/stainedglass.png') }}" 
+                 alt="About me">
+        </div>
+
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/trail.png') }}" 
+                 alt="About me">
+        </div>
+
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/pancakes.png') }}" 
+                 alt="About me">
+        </div>
+
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='images/cat.png') }}" 
+                 alt="About me">
+        </div>
+
+    </div>
+
+</section>
+
+
+{% endblock %}

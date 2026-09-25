@@ -1,0 +1,205 @@
+{% extends "base.html" %}
+
+{% block title %}Nora Sharp | Civil Engineering{% endblock %}
+
+{% block content %}
+<section class="hero">
+
+    <div class="hero-text">
+
+        <p class="eyebrow">
+            Civil Engineering · Columbia University
+        </p>
+
+        <h1>
+            Welcome!
+        </h1>
+
+        <p class="hero-description">
+            My name is Nora Sharp and I'm a civil engineering student interested in 
+            infrastructure, sustainability, and hands-on engineering.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="/projects" class="button">
+                Explore my work
+            </a>
+
+            <a href="/about" class="text-link">
+                More about me →
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="{{ url_for('static', filename='images/Snowman.png') }}" 
+             alt="Nora Sharp">
+    </div>
+
+</section>
+
+<section class="home-intro">
+
+    <div class="intro-image">
+        <img src="{{ url_for('static', filename='images/Hardhat2.png') }}" 
+             alt="Civil engineering">
+    </div>
+
+    <div class="intro-text">
+
+        <p class="eyebrow">What I do</p>
+
+        <h2>
+            I am currently working on getting my bachelors in science, 
+            while interning at a research lab and learning different 
+            industry standard tools.
+        </h2>
+
+        <p>
+            I am studying civil engineering because of my interest in how 
+            engineering can solve real problems and help build communities, 
+            particularly when it comes to infrastructure and environmental 
+            sustainability.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<section class="home-projects">
+
+    <div class="section-heading">
+
+        <div>
+            <p class="eyebrow">Selected Work</p>
+            <h2>Projects</h2>
+        </div>
+
+        <a href="/projects" class="text-link">
+            View all projects →
+        </a>
+
+    </div>
+
+
+    <div class="project-grid">
+
+        {% for project in projects %}
+
+        <article class="project-card">
+
+            <div class="project-image">
+
+                <img
+                    src="{{ url_for('static', filename='images/' + project.images[0].file) }}"
+                    alt="{{ project.title }}"
+                >
+
+            </div>
+
+            <div class="project-content">
+
+                <h3>{{ project.title }}</h3>
+
+                <p>
+                    {{ project.description }}
+                </p>
+
+                <a href="/projects/{{ project.slug }}" class="project-link">
+                    View project →
+                </a>
+
+            </div>
+
+        </article>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+
+<section class="home-areas">
+
+    <p class="eyebrow">Areas of Interest</p>
+
+    <div class="area-grid">
+
+        <div class="area">
+            <span>01</span>
+            <h3>Water</h3>
+            <p>
+                Water treatment, membrane separation,
+                water scarcity, and environmental engineering.
+            </p>
+        </div>
+
+        <div class="area">
+            <span>02</span>
+            <h3>Infrastructure</h3>
+            <p>
+                Civil infrastructure, construction,
+                 and the built environment.
+            </p>
+        </div>
+
+        <div class="area">
+            <span>03</span>
+            <h3>Research</h3>
+            <p>
+                Experimental research, data analysis,
+                scientific literature, and problem solving.
+            </p>
+        </div>
+
+        <div class="area">
+            <span>04</span>
+            <h3>Field Work</h3>
+            <p>
+                Hands-on environmental work, field projects, technical tools,
+                and learning how engineering works outside the classroom.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="home-cta">
+
+    <div class="cta-text">
+
+        <p class="eyebrow">Keep exploring</p>
+
+        <h2>
+            I'm always excited to keep learning new things.
+        </h2>
+
+        <a href="/experience" class="button">
+            See my experience
+        </a>
+
+    </div>
+
+    <div class="cta-image">
+        <img src="{{ url_for('static', filename='images/Truck.png') }}" 
+             alt="Field work">
+    </div>
+
+</section>
+<section class="home-final">
+
+    <div class="final-image">
+        <img src="{{ url_for('static', filename='images/Seniorphoto.png') }}" 
+             alt="Nora Sharp">
+    </div>
+
+</section>
+
+{% endblock %}

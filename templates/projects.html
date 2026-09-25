@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}Projects | Nora Sharp{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+    <p class="eyebrow">Projects</p>
+
+    <h1>
+        Things I've built, analyzed, and experimented with.
+    </h1>
+
+    <p>
+        A collection of engineering, programming, and research projects. 
+    </p>
+</section>
+
+
+<section class="project-grid">
+
+    {% for project in projects %}
+
+    <article class="project-card">
+
+        <div class="project-image">
+
+    
+            <img
+                src="{{ url_for('static', filename='images/' + project.images[0].file) }}"
+                alt="{{ project.title }}"
+>
+
+        </div>
+
+        <div class="project-content">
+
+            <h2>
+                {{ project.title }}
+            </h2>
+
+            <p>
+                {{ project.description }}
+            </p>
+
+            <div class="tags">
+
+                {% for tool in project.tools %}
+
+                    <span>{{ tool }}</span>
+
+                {% endfor %}
+
+            </div>
+
+            <a href="/projects/{{ project.slug }}" class="project-link">
+                View Project →
+            </a>
+
+        </div>
+
+    </article>
+
+    {% endfor %}
+
+</section>
+
+{% endblock %}

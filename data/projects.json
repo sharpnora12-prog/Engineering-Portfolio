@@ -1,0 +1,144 @@
+[
+    {
+    "title": "AutoCAD Civil Engineering Project",
+    "slug": "gear",
+
+    "description": "A beginner civil engineering design project created while learning AutoCAD.",
+
+    "status": "Ongoing",
+
+    "overview": "This project is part of my process of learning AutoCAD and developing the technical drawing skills I will use in civil engineering. I created a small civil engineering design to practice working with dimensions, layers, geometry, and technical drawings.",
+
+    "approach": "I started with basic AutoCAD tutorials and gradually applied those tools to a small civil engineering design. I focused on learning how to organize a drawing, accurately place and dimension objects, and translate a design idea into a technical drawing.",
+
+    "results": "This project has helped me become more comfortable working in AutoCAD and has given me a starting point for developing more advanced civil engineering design projects. Because the project is ongoing, I plan to continue adding complexity and practicing additional tools as I learn them.",
+
+    "tools": [
+        "AutoCAD",
+        "Technical Drawing",
+        "Ongoing"
+    ],
+
+    "images": [
+        {
+            "file": "gear.png",
+            "caption": "First 3D rendered object."
+        }, 
+        {
+            "file": "siteplan1.png.png",
+            "caption": "First siteplan, created by watching a tutorial to gain a better understanding of how to take a supervisors plan and sketch it out in the software."
+        },
+        {
+            "file": "parkinglot.png",
+            "caption": "First experience drafting a site plan using only very simple guidelines and measurement specifications. \n This was a design for a library parking lot that had to include at least 30 industry standard parking spots, greenery, and accesible sidewalks."
+        }
+    ],
+
+    "updates": []
+},
+  {
+    "title": "Infection Map Simulator",
+    "slug": "step15",
+
+    "description": "A Python simulation modeling the spread and recovery of an infection across a map of New York.",
+
+    "status": "Completed",
+
+    "overview": "This project uses a Python simulation to model how an infection spreads through a population distributed across a map. The goal was to build a program that could represent individual locations, track infection status, and model how infections change over time.",
+
+    "approach": "I built the simulation using object-oriented programming, creating separate classes to represent the map and individual cells. I used CSV data to represent the map and programmed rules for infection and recovery. The simulation uses parameters such as recovery time and virality to control how the infection spreads.",
+
+    "results": "This project helped me understand how object-oriented programming can be used to represent a more complicated system. I also learned how to work with external CSV data and how changing model parameters can affect the behavior of a simulation, as well as dealing with adding randomness and a standard deviation curve to change the behavior of certain code elements. ",
+
+    "tools": [
+        "Python",
+        "Object-Oriented Programming",
+        "CSV Data"
+    ],
+
+    "images": [
+        {
+            "file": "step15.png",
+            "caption": "Rendering of the early infection spreading across the map, with the red being the infected, green healthy, and grey dead produced by my code."
+        },
+        {
+            "file":"step125.png",
+            "caption":"Rendering of the late stages of this particular disease, with most inhabitants dying off before they could be cured or become immune produced by my code."
+        }
+    ],
+
+    "updates": []
+},
+{
+    "title": "NYC Air Quality Analysis",
+    "slug": "AirQQ",
+
+    "description": "Analyzing New York City air-quality data using Python and data visualization.",
+
+    "status": "Completed",
+
+    "overview": "For this project, I analyzed air-quality data from New York City to explore patterns in pollution and how air quality varies across different locations and time periods.",
+
+    "approach": "I used Python to clean and organize the dataset, then used Pandas to analyze the data. I focused on identifying patterns in the data and presenting the results in a way that made them easier to interpret. I wanted teh user interface to allow a user to search by a variety of factors including date, zipcode, UHF id, borough, or a combination of 2 with an easy to use system.",
+
+    "results": "The project gave me experience working with a real-world dataset and turning raw data into useful outputs. I also became more comfortable using Python for data analysis and learned how the choices made during data cleaning and visualization can affect the way results are interpreted. During this project I also got more comfortable with debugging, I faced a number of issues with my code crashing meaning I spent a lot of time experimenting with how best to organize information. ",
+
+    "tools": [
+        "Python",
+        "Pandas",
+        "Data Analysis"
+    ],
+
+    "images": [
+        {
+            "file": "AirQQ.png",
+            "caption": "Visualization of the UHF neighborhoods used in this project."
+        }
+    ],
+
+    "updates": []
+}, 
+{
+    "title": "Fostering Kittens",
+    "slug": "cat1",
+
+    "description": "Provided temporary homes to kittens awaiting adoption, helping socialize, train, and prepare each kitten for transition into a permanant home. ",
+
+    "status": "Completed",
+
+    "overview": "Starting in 6th grade and running until my senior year of highschool I fostered kittens who needed temporary homes before being adopted through my cities Animal Welfare Department. Each litter of kittens came with different needs, personalities, and challenges, which taught me to adapt quickly and pay attention to small details.",
+
+    "approach": "Fostering required creating a safe enviornment for kittens, both physically and in terms of helping them become comfortable around people and other animals. I often had to DIY structures to keep them from escaping their enclosure or climbing too high on the furniture, I also learned how to acclimate them to large groups of people and lots of stimuli.",
+
+    "results": "This project was one of the best ways I was able to contribute and be part of my community from a younger age. I was able to directly send the kittens I fostered to our local shelter and even freinds and neighbors do direct adoption. Over the seven years I fostered I was able to help over 40 kittens and even taught my sister how to continue after I moved to college. Along with allowing me to play with tiny kittens, it also reinforced how much I enjoy getting to do hands-on work and use practical problem solving. ",
+
+    "tools": [
+        "Animal Welfare",
+        "Volunteering"
+    ],
+
+    "images": [
+        {
+            "file": "cat1.png",
+            "caption": "Chili Pepper"
+        }, 
+        {
+            "file": "cat2.png",
+            "caption": "Marshmellow (burnt)"
+        },
+        {
+            "file": "cat3.png",
+            "caption": "Princess"
+        },
+        {
+            "file": "Cat4.png",
+            "caption": "Smokey"
+        }
+        
+    ],
+
+    "updates": []
+  
+
+}
+]

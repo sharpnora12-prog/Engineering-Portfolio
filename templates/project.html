@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+
+{% block title %}{{ project.title }} | Nora Sharp{% endblock %}
+
+{% block content %}
+
+<section class="project-page">
+
+    <!-- Project Header -->
+    <section class="project-header">
+
+        <p class="eyebrow">Project</p>
+
+        <h1>{{ project.title }}</h1>
+
+        <p class="project-description">
+            {{ project.description }}
+        </p>
+
+        {% if project.status %}
+            <span class="project-status">
+                {{ project.status }}
+            </span>
+        {% endif %}
+
+    </section>
+
+
+    <!-- Project Overview -->
+
+{% if project.overview %}
+
+<section class="project-section">
+
+    <p class="eyebrow">Overview</p>
+
+    <p>
+        {{ project.overview }}
+    </p>
+
+</section>
+
+{% endif %}
+
+
+<!-- Project Approach -->
+
+{% if project.approach %}
+
+<section class="project-section">
+
+    <p class="eyebrow">Approach</p>
+
+    <p>
+        {{ project.approach }}
+    </p>
+
+</section>
+
+{% endif %}
+
+
+<!-- Results / What I Learned -->
+
+{% if project.results %}
+
+<section class="project-section">
+
+    <p class="eyebrow">Results / What I Learned</p>
+
+    <p>
+        {{ project.results }}
+    </p>
+
+</section>
+
+{% endif %}
+
+
+    <!-- Tools -->
+    {% if project.tools %}
+
+    <section class="project-tools">
+
+        <p class="eyebrow">Tools & Skills</p>
+
+        <div class="tags">
+
+            {% for tool in project.tools %}
+
+                <span>{{ tool }}</span>
+
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+    {% endif %}
+
+
+    <!-- Images -->
+    {% if project.images %}
+
+    <section class="project-images">
+
+        <p class="eyebrow">Project Gallery</p>
+
+        {% for image in project.images %}
+
+        <figure class="project-figure">
+
+            <img
+                src="{{ url_for('static', filename='images/' + image.file) }}"
+                alt="{{ image.caption }}"
+            >
+
+            {% if image.caption %}
+
+            <figcaption>
+                {{ image.caption }}
+            </figcaption>
+
+            {% endif %}
+
+        </figure>
+
+        {% endfor %}
+
+    </section>
+
+    {% endif %}
+
+
+    <!-- Project Updates -->
+    {% if project.updates %}
+
+    <section class="project-updates">
+
+        <p class="eyebrow">Project Updates</p>
+
+        <div class="updates-list">
+
+            {% for update in project.updates %}
+
+            <article class="project-update">
+
+                <p class="update-date">
+                    {{ update.date }}
+                </p>
+
+                <h3>
+                    {{ update.title }}
+                </h3>
+
+                <p>
+                    {{ update.description }}
+                </p>
+
+            </article>
+
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+    {% endif %}
+
+
+    <!-- Back to Projects -->
+    <section class="project-back">
+
+        <a href="/projects" class="text-link">
+            ← Back to all projects
+        </a>
+
+    </section>
+
+</section>
+
+{% endblock %}

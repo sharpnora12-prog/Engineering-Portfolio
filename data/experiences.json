@@ -1,0 +1,85 @@
+[
+    {
+        "company": "Rocky Mountain Youth Corps",
+        "role": "Conservation Crew Member",
+        "date": "June 2026 – July 2026",
+        "start_date": "2026-06-01",
+
+        "description": "Worked on conservation projects in the Middle Rio Grande, including BDA construction, invasive species removal, and wildlife monitoring.",
+
+        "tags": [
+            "Field Work",
+            "Conservation",
+            "Rio Grande River"
+        ],
+
+        "link": "https://youthcorps.org/",
+        "link_text": "Visit Website",
+
+        "images": [
+            {
+                "file": "dam3.png",
+                "caption": "A Beaver Dam Analouge (BDA) my crew and I built that will help control flooding to create benches where native plants can grow."
+            }, 
+            {
+                "file": "transects.png",
+                "caption": "A plant survey using a line transect that analyzes how local plants are handling the expansion of invasive species. "
+            }
+        ]
+    },
+
+    {
+        "company": "Yip Lab · Columbia University",
+        "role": "Research Intern",
+        "date": "November 2025 – Present",
+        "start_date": "2025-11-01",
+
+        "description": "Conduct independent and collaborative research on ion transport through ion exchange membranes, focusing on counterion hydration and the reflection coefficent.",
+
+        "tags": [
+            "Research",
+            "Membranes",
+            "Data Analysis",
+            "Technical Reading and Writing"
+        ],
+
+        "link": "https://yiplab-h2o-e-env.eee.columbia.edu/",
+        "link_text": "Visit Website",
+
+        "images": [
+            {
+                "file": "Yiplabpic.png",
+                "caption": "The set up for the first phase of an IEC experiment which anaylzes how different counterions affect water uptake in comercial membranes."
+            }
+        ]
+    },
+
+    {
+        "company": "McGaughey Research Group · University of New Mexico",
+        "role": "Water Research Intern",
+        "date": "June 2025 – August 2025",
+        "start_date": "2025-06-01",
+
+        "description": "Investigated high-salinity membrane distillation, membrane surface properties, and methods for mitigating calcium sulfate precipitation.",
+
+        "tags": [
+            "Water Treatment",
+            "Membranes",
+            "Research"
+        ],
+
+        "link": "https://www.allysonmcgaughey.com/",
+        "link_text": "Visit Website",
+
+        "images": [
+            {
+                "file": "membranedist.png",
+                "caption": "A trial set up for a membrane distilation machine that aimed to filter produced water from New Mexico's local refineries."
+            },
+            {
+                "file": "waterdrop.png",
+                "caption": "A picture of a waterdroplet right before contact angle measurements were taken on the superhydrophobic membrane."
+            }
+        ]
+    }
+]
